@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<style> 
+				#Inputforstatus{
+					width: 100px;
+					box-sizing: border-box;
+					border: 2px solid #ccc;
+					border-radius: 2px;
+					font-size: 12px;
+					background-color: white;
+					background-position: 10px 10px; 
+					background-repeat: no-repeat;
+					padding: 6px 6px 18px 30px;
+					-webkit-transition: width 0.4s ease-in-out;
+					transition: width 0.4s ease-in-out;
+				}
+				
+				 #Inputforstatus:focus{
+					width: 100%;
+				}
+				</style>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/social_index.css">
+</head>
+<body>
+<header >
+	<center>
+	<input type="text" name="search_item" id="search_box" size="70">
+	<button id="search_box_btn">Search</button>
+	<div id="suggestion_list_container">
+		<ul id="suggestions"></ul>
+	</div>
+</center>
+</header>
+<section>
+	<section>
+		<section class="left_box" id="id_left_box"></section>
+		<section class="main_container">
+			<section class="top_box">
+				<h2>Update your Status Here : </h2>
+				<div>
+				  <input type="text" name="search" placeholder="Status.." id="Inputforstatus">
+				  <button onclick="addstatus()">Update status</button>
+				</div>
+			</section>
+			<section class="feed_box">
+				<div id="allstatushere">
+
+				</div>
+			</section>
+		</section>
+		<section class="right_box" id="right_box"></section>
+	</section>
+	
+</section>
+</body>
+<script type="text/javascript" src="js/social_index.js"></script>
+<script type="text/javascript" src="js/temp_data.js"></script>
+</html>
